@@ -29,7 +29,7 @@ public class SurveyItemDeserializer implements JsonDeserializer<SurveyItem> {
             List<String> options = new ArrayList<>();
             JsonArray jsonArray = jsonObject.get("options").getAsJsonArray();
             for(int i = 0; i < jsonArray.size(); i++) {
-                options.add(jsonArray.get(0).getAsString());
+                options.add(jsonArray.get(i).getAsString());
             }
             radioSurveyItem.setOptions(options);
             return radioSurveyItem;

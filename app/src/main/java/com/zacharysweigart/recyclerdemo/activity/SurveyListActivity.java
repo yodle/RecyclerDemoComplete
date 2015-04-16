@@ -39,8 +39,8 @@ public class SurveyListActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey_list);
         ButterKnife.inject(this);
-        
-        String appString = "[{\"name\":\"First Survey\",\"surveyItems\":[{\"prompt\":\"Name\",\"type\":\"Text\"},{\"prompt\":\"Age\",\"type\":\"Text\"},{\"options\":[\"Male\",\"female\"],\"prompt\":\"Gender\",\"type\":\"Radio\"},{\"numStars\":5,\"stepSize\":0.5,\"prompt\":\"Rating\",\"type\":\"Rating\"}]},{\"name\":\"Second Survey\",\"surveyItems\":[{\"prompt\":\"What year will you graduate\",\"type\":\"Text\"},{\"prompt\":\"What major are you pursuing\",\"type\":\"Text\"},{\"options\":[\"Grad school\",\"Job\"],\"prompt\":\"What will you be doing after graduation\",\"type\":\"Radio\"}]}]\n";
+
+        String appString = "[{\"name\":\"First Survey\",\"surveyItems\":[{\"prompt\":\"Name\",\"type\":\"Text\"},{\"prompt\":\"Age\",\"type\":\"Text\"},{\"options\":[\"Male\",\"Female\"],\"prompt\":\"Gender\",\"type\":\"Radio\"},{\"numStars\":5,\"stepSize\":0.5,\"prompt\":\"Rating\",\"type\":\"Rating\"}]},{\"name\":\"Second Survey\",\"surveyItems\":[{\"prompt\":\"What year will you graduate\",\"type\":\"Text\"},{\"prompt\":\"What major are you pursuing\",\"type\":\"Text\"},{\"options\":[\"Grad school\",\"Job\"],\"prompt\":\"What will you be doing after graduation\",\"type\":\"Radio\"}]}]\n";
 
         ActionBar actionBar = getSupportActionBar();
         if(actionBar != null) {
